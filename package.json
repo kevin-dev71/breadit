@@ -64,7 +64,7 @@
     "@types/editorjs__header": "^2.6.0",
     "@types/lodash.debounce": "^4.0.7",
     "@types/node": "20.5.0",
-    "@types/react": "18.2.200",
+    "@types/react": "18.2.20",
     "@types/react-datepicker": "^4.15.0",
     "@types/react-dom": "18.2.7",
     "@types/react-google-recaptcha": "^2.1.5",
