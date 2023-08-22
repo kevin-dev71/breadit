@@ -26,6 +26,9 @@ const Page = () => {
       const { data } = await axios.post("/api/subreddit", payload)
       return data as string
     },
+    onSuccess: (data) => {
+      router.push(`/r/${data}`)
+    },
     onError: (err) => {
       if (err instanceof AxiosError) {
         if (err.response?.status === 409) {
@@ -47,6 +50,12 @@ const Page = () => {
           return loginToast()
         }
       }
+
+      toast({
+        title: "There was an error",
+        description: "Could not create subreddit.",
+        variant: "destructive",
+      })
     },
   })
 
